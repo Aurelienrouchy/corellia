@@ -16,10 +16,11 @@ import { useOnBoarding } from "../../../context/OnBoardingContext";
 
 const { width, height } = Dimensions.get("window");
 const components = [
-  // {
-  //   label: "What's your name ?",
-  //   cmp: (params: any) => <GetGender {...{...params}}/>,
-  // },
+  {
+    property: 'one',
+    label: "What's your name ?",
+    cmp: (params: any) => <ConnectPhotosAccounts {...{...params}}/>,
+  },
   {
     property: "first_name",
     label: "What's your name ?",
@@ -53,7 +54,7 @@ const components = [
   {
     property: "bio",
     label: "Something about you ?",
-    cmp: (params) => <GetDescription {...{...params}}/>,
+    cmp: (params: any) => <GetDescription {...{...params}}/>,
   },
 ];
 

@@ -29,7 +29,7 @@ const initialeState = {
   count: 0
 };
 
-const OnBoardingStateContext = createContext();
+const OnBoardingStateContext = createContext(initialeState);
 
 function onBoardingReducer(state: State, action: Action): any {
   switch (action.type) {
@@ -66,7 +66,7 @@ function onBoardingReducer(state: State, action: Action): any {
   }
 }
 
-export const OnBoardingProvider = ({ children }) => {
+export const OnBoardingProvider = ({ children }: OnBoardingProviderProps) => {
   const contextValue = useReducer(onBoardingReducer, initialeState);
   return (
     <OnBoardingStateContext.Provider value={contextValue}>
@@ -75,7 +75,7 @@ export const OnBoardingProvider = ({ children }) => {
   );
 };
 
-export const useOnBoarding = () => {
+export const useOnBoarding = (): any => {
   const contextValue = useContext(OnBoardingStateContext);
   return contextValue;
 };

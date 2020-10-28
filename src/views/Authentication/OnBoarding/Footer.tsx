@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, StyleSheet, Dimensions, TouchableOpacity, Image, Keyboard } from "react-native";
+import { View, StyleSheet, Dimensions, TouchableOpacity, Image } from "react-native";
 import { useOnBoarding } from "../../../context/OnBoardingContext";
 import Animated, {timing, Easing} from "react-native-reanimated";
 

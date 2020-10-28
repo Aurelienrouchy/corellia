@@ -4,10 +4,10 @@ import { View, TouchableOpacity, Dimensions, StyleSheet, Image, Animated } from 
 import { useAnimationColor } from "./../../../hooks/useAnimation";
 import { useOnBoarding } from "./../../../context/OnBoardingContext";
 
-import MenWhite from "./../../../../assets/images/men-white.png";
-import MenBlack from "./../../../../assets/images/men-black.png";
-import WomanWhite from "./../../../../assets/images/woman-white.png";
-import WomanBlack from "./../../../../assets/images/woman-black.png";
+const MenWhite   = require("./../../../../assets/images/men-white.png");
+const MenBlack   = require("./../../../../assets/images/men-black.png");
+const WomanWhite = require("./../../../../assets/images/woman-white.png");
+const WomanBlack = require("./../../../../assets/images/woman-black.png");
 
 const { height } = Dimensions.get('window');
 const styles = StyleSheet.create({
